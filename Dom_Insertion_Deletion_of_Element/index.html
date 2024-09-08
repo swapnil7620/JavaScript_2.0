@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .red{
+        color:red;
+        border: 2px solid grey;
+    }
+    .yellow{
+        background-color: yellow;
+        
+        border: 2px solid grey;
+    }
+    
+</style>
+<body>
+    <script src="Script.js"></script>
+    <div class="container red bg-noun">
+        <div class="box yellow"style="display: flex";  data-createdBy ="swapnil">Hi i am in box</div>
+        <div class="box yellow" >Hi i am in box too</div>
+    </div>
+    <script>
+        let div= document.createElement("div");
+        div.innerHTML="i am  inserting element here<b> by me</b>" 
+        div.setAttribute("class","style",)
+        // document.querySelector(".container").append(div);
+        // document.querySelector(".container").before(div);
+        document.querySelector(".container").prepend(div);
+        // document.querySelector(".container").before(div);
+
+        let con =document.querySelector(".container");
+        con.insertAdjacentHTML("beforebegin","<b>some people are doping here</b>")
+        con.insertAdjacentHTML("afterend","<b>some people are doping here</b>")
+        con.insertAdjacentHTML("afterend","<b>some people are doping here</b>")
+        con.insertAdjacentHTML("beforeend","<b>some people are doping here</b>")
+        
+    
+    </script>
+</body>
+</html>
